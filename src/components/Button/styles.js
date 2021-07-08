@@ -14,5 +14,6 @@ export const styles = StyleSheet.create({
   },
   text: {
     color: themes.colors.heading,
+    fontFamily: themes.fonts.bold,
   },
 });

@@ -16,10 +16,10 @@ export function Landing() {
       />
       <View style={styles.footer}>
         <Button message="ASSINE AGORA" />
-        <Text style={styles.pricing}>
+        {/* <Text style={styles.pricing}>
           Comece a assistir o Disney+ por R$ 27,90/mês ou R$ 279,90/ano. Os
           preços podem variar em outras moedas ou plataformas.
-        </Text>
+        </Text> */}
         <Button message="ENTRAR" transparent />
       </View>
     </Background>

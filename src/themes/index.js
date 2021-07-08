@@ -5,4 +5,9 @@ export const themes = {
     heading: "#DDE3F0",
     highlight: "#ABB1CC",
   },
+  fonts: {
+    regular: "Manrope_400Regular",
+    medium: "Manrope_500Medium",
+    bold: "Manrope_700Bold",
+  },
 };
