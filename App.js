@@ -4,8 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import AppLoading from "expo-app-loading";
 
-import { Movies } from "./src/screens/Movies";
-import { Landing } from "./src/screens/Landing";
+import Routes from "./routes";
 
 import {
   useFonts,
@@ -24,15 +23,15 @@ export default function App() {
     return <AppLoading />;
   } else {
     return (
-      <View style={styles.container}>
+      <>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
           translucent
         />
         {/* <Movies /> */}
-        <Landing />
-      </View>
+        <Routes />
+      </>
     );
   }
 }

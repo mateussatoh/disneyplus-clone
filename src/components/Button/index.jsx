@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useNavigation } from "@react-navigation/core";
 import { View, TouchableOpacity, Text } from "react-native";
 
 import { styles } from "./styles";
@@ -7,6 +7,8 @@ import { styles } from "./styles";
 import { themes } from "../../themes";
 
 export function Button({ message, transparent }) {
+  const Navigation = useNavigation();
+
   return (
     <TouchableOpacity
       style={[
@@ -15,7 +17,7 @@ export function Button({ message, transparent }) {
           ? { backgroundColor: themes.colors.background }
           : { backgroundColor: themes.colors.lightBlue },
       ]}
-      onPress={() => {}}
+      onPress={() => {Navigation.navigate('Movies')}}
     >
       <Text style={styles.text}>{message}</Text>
     </TouchableOpacity>
