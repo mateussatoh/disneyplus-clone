@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from "react-native";
 import AppLoading from "expo-app-loading";
 
 import Routes from "./routes";
+ import { Background } from "./src/components/Background";
 
 import {
   useFonts,
@@ -23,7 +24,7 @@ export default function App() {
     return <AppLoading />;
   } else {
     return (
-      <>
+      <Background>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
@@ -31,7 +32,7 @@ export default function App() {
         />
         {/* <Movies /> */}
         <Routes />
-      </>
+      </Background>
     );
   }
 }
