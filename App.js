@@ -1,11 +1,10 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View } from "react-native";
 
 import AppLoading from "expo-app-loading";
 
 import Routes from "./routes";
- import { Background } from "./src/components/Background";
+import { Background } from "./src/components/Background";
 
 import {
   useFonts,
@@ -30,7 +29,6 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {/* <Movies /> */}
         <Routes />
       </Background>
     );
