@@ -1,13 +1,10 @@
 import React from 'react';
 import {
   View,
-  Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
 import categoriasData from '../../utils/categorias';
-import { themes } from "../../themes";
 import { styles } from './styles';
 
 
@@ -37,5 +34,4 @@ export function Categorias() {
       />
     </View>
   );
-};
-
+}

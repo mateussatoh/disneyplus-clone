@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   View,
-  Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
@@ -36,4 +34,4 @@ export function Banners() {
       />
     </View>
   );
-};
+}

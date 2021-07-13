@@ -2,12 +2,10 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
 import novidadesData from '../../utils/novidades';
-import { themes } from "../../themes";
 import { styles } from "../../globalStyles";
 
 
@@ -41,4 +39,4 @@ export function Novidades() {
     </View>
   </View>
   );
-};
+}

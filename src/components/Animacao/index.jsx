@@ -2,12 +2,10 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
 import animacaoData from '../../utils/animacao';
-import { themes } from "../../themes";
 import { styles } from "../../globalStyles";
 
 
@@ -40,5 +38,4 @@ export function Animacao() {
     </View>
   </View>
   );
-};
-
+}

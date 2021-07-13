@@ -2,8 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Image } from 'react-native';
 import { Movies } from '../screens/Movies';
-import { FontAwesome } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 import profile from '../asssets/profile.jpg'
 
 

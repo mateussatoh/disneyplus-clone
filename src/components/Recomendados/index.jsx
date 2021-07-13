@@ -2,12 +2,10 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
 import recomendadosData from '../../utils/recomendados';
-import { themes } from "../../themes";
 import { styles } from "../../globalStyles";
 
 
@@ -41,4 +39,4 @@ export function Recomendados() {
     </View>
   </View>
   );
-};
+}

@@ -2,12 +2,10 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Image,
   FlatList
 } from 'react-native';
 import starWarsData from '../../utils/starWars';
-import { themes } from "../../themes";
 import { styles } from "../../globalStyles";
 
 
@@ -41,5 +39,4 @@ export function StarWars() {
     </View>
   </View>
   );
-};
-
+}
