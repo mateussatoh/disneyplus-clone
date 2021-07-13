@@ -30,4 +30,6 @@
 - William Filgueira
 <br>
 - Jesse Soares 
+<br>
+- Yasmin De Souza Batista
 
