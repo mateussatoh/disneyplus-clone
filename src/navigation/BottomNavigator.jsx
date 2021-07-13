@@ -14,10 +14,10 @@ export function BottomNavigator () {
     <Tab.Navigator
       tabBarOptions={{
         style: {
-          height: 50,
+          height: 60,
           backgroundColor: "#1A1C29",
           borderTopWidth: .2,
-          borderTopColor: "#ABB1CC"
+          borderTopColor: "#4d5268"
         },
         showLabel: false,
       }}>
@@ -26,7 +26,7 @@ export function BottomNavigator () {
         component={Movies}
         options={{
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" size={28} color="#ABB1CC" />
+            <MaterialCommunityIcons name="home" size={35} color="#fff" />
           ),
         }}
       />
@@ -58,12 +58,12 @@ export function BottomNavigator () {
             <Image 
                 source={profile}
                 style={{
-                    height: 40,
-                    width: 40,
+                    height: 32,
+                    width: 32,
                     justifyContent: 'center',
                     alignItems: 'center',
                     borderRadius: 30,
-                    borderWidth: 1,
+                    borderWidth: 1.5,
                     borderColor: "#ABB1CC"
                 }}>
             </Image>
