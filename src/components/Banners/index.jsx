@@ -3,25 +3,24 @@ import {
   View,
   Text,
   StyleSheet,
-  ImageBackground,
+  Image,
+  FlatList
 } from 'react-native';
 import { styles } from './styles';
 import bannersData from '../../utils/banners';
-import { FlatList } from 'react-native-gesture-handler';
 
 
 export function Banners() {
 
   const renderBanners = ({item}) => {
     return (
-      <ImageBackground
+      <Image
         source={item.image}
         style={[
           styles.bannerItem,
           { marginLeft: item.id === '1' ? 20 : 0},
-        ]}
-        imageStyle={styles.bannerImage}>
-      </ImageBackground>
+        ]}>
+      </Image>
     );
   };
 

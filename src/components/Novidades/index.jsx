@@ -4,26 +4,25 @@ import {
   Text,
   StyleSheet,
   Image,
-  ImageBackground,
+  FlatList
 } from 'react-native';
 import novidadesData from '../../utils/novidades';
 import { themes } from "../../themes";
 import { styles } from "../../globalStyles";
-import { FlatList } from 'react-native-gesture-handler';
 
 
 export function Novidades() {
 
   const renderNovidades = ({item}) => {
     return (
-      <ImageBackground
+      <Image
         source={item.image}
         style={[
           styles.moviesItem,
           { marginLeft: item.id === '1' ? 20 : 0},
         ]}
         imageStyle={styles.moviesImage}>
-      </ImageBackground>
+      </Image>
     );
   };
 

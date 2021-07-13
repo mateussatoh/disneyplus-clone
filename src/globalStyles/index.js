@@ -22,9 +22,6 @@ export const styles = StyleSheet.create({
         width: 105,
         height: 155,
         marginRight: 12,
-    },
-
-    moviesImage: {
         borderRadius: 5,
     },
  });

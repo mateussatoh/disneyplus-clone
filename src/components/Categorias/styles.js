@@ -12,9 +12,6 @@ export const styles = StyleSheet.create({
         width: 63,
         height: 58,
         marginRight: 14,
-    },
-    
-    categoriasImage: {
         borderRadius: 10,
         borderWidth: .5,
         borderColor: themes.colors.highlight,

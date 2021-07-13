@@ -11,9 +11,6 @@ export const styles = StyleSheet.create({
       width: 370,
       height: 210,
       marginRight: 20,
-    },
-
-    bannerImage: {
       borderRadius: 5,
     },
 });

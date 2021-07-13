@@ -4,10 +4,9 @@ import {
   Text,
   StyleSheet,
   Image,
-  ImageBackground,
+  FlatList
 } from 'react-native';
 import categoriasData from '../../utils/categorias';
-import { FlatList } from 'react-native-gesture-handler';
 import { themes } from "../../themes";
 import { styles } from './styles';
 
@@ -16,14 +15,13 @@ export function Categorias() {
 
   const renderCategorias = ({item}) => {
     return (
-      <ImageBackground
+      <Image
         source={item.image}
         style={[
           styles.categoriasItem,
           { marginLeft: item.id === '1' ? 20 : 0},
-        ]}
-        imageStyle={styles.categoriasImage}>
-      </ImageBackground>
+        ]}>
+      </Image>
     );
   };
 

@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { Landing } from './src/screens/Landing';
 import { Movies } from './src/screens/Movies';
+import { BottomNavigator } from './src/navigation/BottomNavigator';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -12,7 +13,7 @@ const Routes = () => {
         <NavigationContainer>
             <Navigator initialRouteName='Landing' headerMode='none'>
                 <Screen name='Landing' component={Landing}/>
-                <Screen name='Movies' component={Movies}/>
+                <Screen name='Movies' component={BottomNavigator}/>
             </Navigator>
         </NavigationContainer>
     );
