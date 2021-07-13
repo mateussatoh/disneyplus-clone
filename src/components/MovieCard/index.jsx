@@ -1,13 +1,14 @@
 import React from "react";
 
-import { View, Text } from "react-native";
+import { Image } from "react-native";
 
 import { styles } from "./styles";
 
-export function MovieCard() {
+export function MovieCard({ image, id }) {
   return (
-    <View>
-      <Text>Sou o grupo 3</Text>
-    </View>
+    <Image
+      source={image}
+      style={[styles.container, { marginLeft: id === "1" ? 20 : 0 }]}
+    ></Image>
   );
 }

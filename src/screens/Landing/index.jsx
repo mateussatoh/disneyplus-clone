@@ -12,7 +12,7 @@ export function Landing() {
     <Background>
       <Image
         style={styles.image}
-        source={require("../../asssets/disneyplus.jpg")}
+        source={require("../../assets/disneyplus.jpg")}
       />
       <View style={styles.footer}>
         <Button message="ASSINE AGORA" />

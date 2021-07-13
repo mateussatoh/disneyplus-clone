@@ -1,9 +1,9 @@
 import React from "react";
-import { StatusBar, StyleSheet, Text, View } from "react-native";
+import { StatusBar } from "react-native";
 
 import AppLoading from "expo-app-loading";
 
-import Routes from "./routes";
+import { StackNavigator } from "./src/routes/StackNavigator";
 import { Background } from "./src/components/Background";
 
 import {
@@ -29,17 +29,8 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        <Routes />
+        <StackNavigator />
       </Background>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
